@@ -36,3 +36,10 @@ INSERT INTO Podcasts (Title) VALUES
 
 
 ```
+
+
+## Build container for the DockerCourseWebApi 
+
+```bash
+   docker build -f .\DockerCourseWebApi\Dockerfile -t api .
+```
