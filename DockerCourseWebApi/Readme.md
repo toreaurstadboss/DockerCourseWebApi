@@ -17,6 +17,8 @@ Sql to run
 -- Created by GitHub Copilot in VSCode MSSQL - review carefully before executing
 CREATE DATABASE [Podcasts];
 
+USE Podcasts 
+
 
 CREATE TABLE Podcasts(
     Id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
@@ -32,14 +34,11 @@ INSERT INTO Podcasts (Title) VALUES
 ('Nerds And World Domination Weekly Podcast'),
 ('Math and IT Weekly Podcast'),
 ('Frontend happy hour Weekly Podcast'),
-('Backend Happy hour Weekly Podcast'),
+('Backend Happy hour Weekly Podcast')
 
 
 ```
 
+## Docker - Build the project from Dockerfile
 
-## Build container for the DockerCourseWebApi 
-
-```bash
-   docker build -f .\DockerCourseWebApi\Dockerfile -t api .
-```
+docker build -f .\DockerCourseWebApi\Dockerfile -t dockercoursewebapi:latest .
